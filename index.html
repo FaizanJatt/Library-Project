@@ -1,0 +1,32 @@
+<!Doctype html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Library</title>
+</head>
+<body>
+<h1>Book Library</h1>
+    <div id='newBtn-Container'>
+        <button id='newBtn'>Add Book</button>
+    </div>
+     <div id="popUp">
+        <form id='form' action='/Scripter.js'>
+            <span class="close">&times;</span>
+            <ledgend>New Book</ledgend>
+            <div id='textInput'> 
+                <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+            </div>
+            <div id='checkBox'>
+                <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+            </div>
+            <button type='submit' form='form' id='addBtn'>Add</button>
+        </form>
+    </div>
+    <div id='Library-container'></div>
+
+    <script src="./Scripter.js"></script>
+</body>
+
+</html>
